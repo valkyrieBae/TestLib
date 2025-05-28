@@ -16,8 +16,6 @@
 extern "C" {
 #endif
 
-namespace goog::poc {
-
 typedef struct ItemParamOpaque ItemParam;
 
 ANALYTICS_API int TestMain();
@@ -36,8 +34,6 @@ ANALYTICS_API void ItemParamAddDouble(ItemParam* item_param, const char* name,
                                       double value);
 
 ANALYTICS_API int64_t InsertEvent(ItemParam* item_param);
-
-}  // namespace goog::poc
 
 #ifdef __cplusplus
 }
